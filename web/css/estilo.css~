@@ -1,0 +1,136 @@
+html,body {
+ background-image:url("media/fondo.png");
+background-repeat: repeat;
+ height:100%;
+ 
+ 
+}
+
+header {
+		
+	display:block;
+	background:#FFF9EF;
+	padding:10px 0px;
+}
+section {
+	width: 79%;
+	background: #ccc;
+	float: left;
+	overflow: auto;
+	padding-bottom: 60px;
+	padding-top:30px;
+}
+
+aside {
+	float: right;
+	border: 1px solid red;
+	width: 19%;
+	border: 1px solid red;
+	/*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+	/*visibility: hidden;*/
+}
+footer {
+	position: relative;
+	margin-top: -50px;
+	height: 40px; 
+	padding:5px 0px;
+	clear: both;
+	background: #286af0;
+	text-align: center;
+	color: #fff;
+}
+figure {
+	display: table; margin: 0 auto;
+}
+
+ul.menu {
+	border: 1px solid #7C7C7C;
+	border-bottom: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+	width: 180px;
+	}
+	
+ul.menu li{
+	background: #F4F4F4;
+	border-bottom: 1px solid #7C7C7C;
+	border-top: 1px solid #FFF;
+
+}
+	
+ul.menu li a{
+	color: #333;
+	display: block;
+	padding: .2em 0 .2em .5em;
+	text-decoration: none;
+}
+	
+/* Estilos para el menú horizontal */
+nav.menu {
+  background-color: #C4DFDF;
+  display: flex;         /* Cambia a flexbox para un menú horizontal */
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;         /* Hace que los elementos sean horizontales */
+}
+
+nav.menu ul li {
+  position: relative;    /* Necesario para los submenús */
+  padding: 10px 20px;
+}
+
+nav.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav.menu ul li:hover > a {
+  background-color: #ddd; /* Cambia el color cuando pases el mouse */
+  color: #333;
+}
+
+/* Estilos para los submenús (ocultos inicialmente) */
+nav.menu ul li ul.submenu {
+  display: none;               /* Ocultar submenús por defecto */
+  position: absolute;          /* Posicionarlo bajo el menú principal */
+  top: 100%;                   /* Justo debajo del elemento principal */
+  left: 0;
+  background-color: #C4DFDF;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav.menu ul li ul.submenu li {
+  padding: 10px 20px;
+}
+
+nav.menu ul li ul.submenu li a {
+  color: #333;                 /* Color del texto del submenú */
+  text-decoration: none;
+}
+
+nav.menu ul li ul.submenu li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* Mostrar submenús al pasar el ratón */
+nav.menu ul li:hover ul.submenu {
+  display: block;
+}
+
+/* Para el main asegurarse que tiene el margen adecuado */
+main {
+  margin: 20px;
+  padding: 20px;
+}
+	
+
+
