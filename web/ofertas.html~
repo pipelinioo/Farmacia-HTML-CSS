@@ -2,7 +2,7 @@
 
 <head>
 <link rel="stylesheet" type="text/css" media="all" href="css/farmacia.css?v=1.2">
-<title> Ofertas - Rayos X </title>
+<title> Farmacia Recetas Rayos X </title>
 </head>
 
 <header>
@@ -46,7 +46,7 @@
 </nav>
 
 <main>
-  <h2>Ofertas!!</h2>
+  <h2>Bienvenido a Recetas Rayos X</h2>
   <p>Encuentra toda la informaci&oacute;n sobre medicamentos, recetas y m&aacute;s.</p>
   <p>gatito sabrosito</p>
 </main>

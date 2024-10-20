@@ -2,7 +2,7 @@
 
 <head>
 <link rel="stylesheet" type="text/css" media="all" href="css/farmacia.css?v=1.2">
-<title> Ofertas - Rayos X </title>
+<title> Cardiovascular</title>
 </head>
 
 <header>
@@ -29,7 +29,7 @@
         <li><a href="salud_mental.html">Salud mental</a></li>
         <li><a href="cardiovascular.html">Cardiovascular</a></li>
         <li><a href="dermatologia.html">Dermatolog&iacute;a</a></li>
-        <li><a href="huesos.html">Huesos y articulaciones</a></li>
+        <li><a href="huesos.html.html">Huesos y articulaciones</a></li>
       </ul>
     </li>
     <li><a href="ofertas.html">Ofertas</a></li>
@@ -46,9 +46,20 @@
 </nav>
 
 <main>
-  <h2>Ofertas!!</h2>
-  <p>Encuentra toda la informaci&oacute;n sobre medicamentos, recetas y m&aacute;s.</p>
-  <p>gatito sabrosito</p>
+  <h2>Cardiovascular</h2>
+    <div class="productos">
+
+    <div class="producto">
+      <img src="media/Atenolol.jpg" alt="Atenolol">
+      <p class="laboratorio">...</p>
+      <h3>Atenolol</h3>
+      <p class="precio-normal">$8.050 <span>(Normal)</span></p>
+      <p class="precio-descuento">$6.190 <span class="oferta">Oferta</span></p>
+      <button class="boton-agregar">Agregar</button>
+    </div>
+
+	
+    
 </main>
 
 
