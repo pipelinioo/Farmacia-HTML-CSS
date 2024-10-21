@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" media="all" href="css/farmacia.css?v=1.2">
+<title> Ofertas - Rayos X </title>
+</head>
+
+<header>
+  <div class="logo">
+    <img src="media/cheto.png" alt="Logo de la Farmacia" width="100">
+  </div>
+  <h1>Recetas Rayos X</h1>
+  
+  <div class="login">
+    <a href="login.html">Iniciar Sesi&oacute;n</a>
+  </div>
+  
+  
+</header>
+
+<nav class="menu">
+  <ul>
+    <li><a href="farmacia.html">Inicio</a></li>
+    <li><a href="#">Medicamentos</a>
+      <ul class="submenu">
+        <li><a href="dolor_fiebre.html">Dolor y fiebre</a></li>
+        <li><a href="sistema_digestivo.html">Sistema digestivo</a></li>
+        <li><a href="sistema_respiratorio.html">Sistema respiratorio y alergias</a></li>
+        <li><a href="salud_mental.html">Salud mental</a></li>
+        <li><a href="cardiovascular.html">Cardiovascular</a></li>
+        <li><a href="dermatologia.html">Dermatolog&iacute;a</a></li>
+        <li><a href="huesos.html">Huesos y articulaciones</a></li>
+      </ul>
+    </li>
+    <li><a href="ofertas.html">Ofertas</a></li>
+    <li><a href="medicos.html">Medicos</a>
+    <ul class="submenu">
+        <li><a href="AgendarHora.html">Agendar hora</a></li>
+    </ul>
+    
+    </li>
+    <li><a href="listadofarmacias.html">Farmacias</a></li>
+    <li><a href="MR.html">Estructura(MR)</a></li> 
+    <li><a href="Grupo.html">Grupo Trabajo</a></li>
+  </ul>
+</nav>
+
+<main>
+<div class="form-container">
+  <h2>Agendar horario de consulta</h2>
+  
+  <form action="submit_appointment.php" method="POST">
+    <fieldset>
+      <legend>Datos del paciente:</legend>
+      
+      <label for="rut">Ingrese su rut con d&iacute;gito verificador:</label>
+      <div class="rut-container">
+        <input type="text" id="rut" name="rut" placeholder="Rut" required>
+        <input type="text" id="dv" name="dv" placeholder="0-k" required maxlength="1">
+      </div>
+      
+      <label for="nombre">Ingrese su nombre y apellido:</label>
+      <div class="name-container">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+      </div>
+      
+      <label for="telefono">N&uacute;mero de tel&eacute;fono:</label>
+      <div class="phone-container">
+        <input type="text" id="codigo_area" name="codigo_area" placeholder="C&oacute;digo de &aacute;rea" required maxlength="3">
+        <input type="text" id="telefono" name="telefono" placeholder="N&uacute;mero de tel&eacute;fono" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Seleccionar fecha y hora</legend>
+      <input type="date" id="fecha" name="fecha" required>
+      <select id="hora" name="hora" required>
+        <option value="" disabled selected>Horas disponibles</option>
+        <option value="10:00">10:00 AM</option>
+        <option value="11:00">11:00 AM</option>
+        <option value="12:00">12:00 PM</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Seleccione un M&eacute;dico</legend>
+      <label>
+        <input type="radio" name="servicio" value="Pediatr&iacute;a" required> Pediatr&iacute;a - Dr. Jose Martinez
+      </label>
+      <label>
+        <input type="radio" name="servicio" value="Cardiolog&iacute;a"> Cardiolog&iacute;a - Dra. Cristina Mu&#241;oz
+      </label>
+      <label>
+        <input type="radio" name="servicio" value="Neurolog&iacute;a"> Neurolog&iacute;a - Dra. Luisa Cardenas
+      </label>
+    </fieldset>
+
+    <button type="submit" class="submit-btn">Agendar</button>
+  </form>
+</div>
+
+</main>
+
+</html>

@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<link rel="stylesheet" type="text/css" media="all" href="css/farmacia.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/farmacia.css?v=1.2">
 <title> Medicamentos </title>
 </head>
 
@@ -30,7 +30,7 @@
     <li><a href="ofertas.html">Ofertas</a></li>
     <li><a href="medicos.html">Medicos</a>
     <ul class="submenu">
-        <li><a href="farmacia.html">Agendar hora</a></li>
+        <li><a href="AgendarHora.html">Agendar hora</a></li>
     </ul>
     
     </li>

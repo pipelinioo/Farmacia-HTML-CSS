@@ -2,7 +2,7 @@
 
 <head>
 <link rel="stylesheet" type="text/css" media="all" href="css/farmacia.css?v=1.1">
-<title> Farmacia Recetas Rayos X </title>
+<title> Farmacias - Rayos X </title>
 </head>
 
 <header>
@@ -35,7 +35,7 @@
     <li><a href="ofertas.html">Ofertas</a></li>
     <li><a href="medicos.html">Medicos</a>
     <ul class="submenu">
-        <li><a href="farmacia.html">Agendar hora</a></li>
+        <li><a href="AgendarHora.html">Agendar hora</a></li>
     </ul>
     
     </li>
@@ -46,11 +46,75 @@
 </nav>
 
 <main>
-  <h2>Bienvenido a Recetas Rayos X</h2>
-  <p>Encuentra toda la informaci&oacute;n sobre medicamentos, recetas y m&aacute;s.</p>
-  <p>gatito sabrosito</p>
-</main>
+  <h2>Farmacias asociadas</h2>
+  <p>Aqu&iacute; podr&aacute; encontrar la informaci&oacute;n de cada farmacia asociada.</p>
+  <div class="farmacias-container">
+  <h2>Farmacias</h2>
+  
+  <div class="farmacia-grid">
+    <div class="farmacia-card">
+      <h3>Farmacias Ahumada</h3>
+      <img src="placeholder.png" alt="Farmacia Ahumada">
+      <a href="#">Abrir &gt;</a>
+    </div>
+    
+    <div class="farmacia-card">
+      <h3>Farmacias del Dr. Simi</h3>
+      <img src="placeholder.png" alt="Farmacias del Dr. Simi">
+      <a href="#">Abrir &gt;</a>
+    </div>
 
+    <div class="farmacia-card">
+      <h3>Farmacias Salcobrand</h3>
+      <img src="placeholder.png" alt="Farmacias Salcobrand">
+      <a href="#">Abrir &gt;</a>
+    </div>
+
+    <div class="farmacia-card">
+      <h3>Farmacias Cruz Verde</h3>
+      <img src="placeholder.png" alt="Farmacias Cruz Verde">
+      <a href="#">Abrir &gt;</a>
+    </div>
+
+    <div class="farmacia-card">
+      <h3>Farmacia El Alerce</h3>
+      <img src="placeholder.png" alt="Farmacia El Alerce">
+      <a href="#">Abrir &gt;</a>
+    </div>
+
+    <div class="farmacia-card">
+      <h3>Farmacia La Unión</h3>
+      <img src="placeholder.png" alt="Farmacia La Uni&oacute;n">
+      <a href="#">Abrir &gt;</a>
+    </div>
+
+    <div class="farmacia-card">
+      <h3>Farmacia Río Bueno</h3>
+      <img src="placeholder.png" alt="Farmacia Río Bueno">
+      <a href="#">Abrir &gt;</a>
+    </div>
+
+    <div class="farmacia-card">
+      <h3>Farmacia Farma Ranco</h3>
+      <img src="placeholder.png" alt="Farmacia Farma Ranco">
+      <a href="#">Abrir &gt;</a>
+    </div>
+
+    <div class="farmacia-card">
+      <h3>Farmacia Knop</h3>
+      <img src="placeholder.png" alt="Farmacia Knop">
+      <a href="#">Abrir &gt;</a>
+    </div>
+
+    <div class="farmacia-card">
+      <h3>EcoFarmacias</h3>
+      <img src="placeholder.png" alt="EcoFarmacias">
+      <a href="#">Abrir &gt;</a>
+    </div>
+  </div>
+</div>
+
+</main>
 
 <footer>
   <p>&copy; 2024 Recetas Rayos X. Todos los derechos reservados.</p>
