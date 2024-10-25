@@ -6,7 +6,7 @@ body {
   color: #333;
   display: flex;              /* Flex para estructurar */
   flex-direction: column;     /* Columnas verticales */
-  min-height: 100vh;          /* Asegura que el cuerpo ocupe al menos el 100% de la ventana */
+  min-height: 100vh;          
 }
 
 header {
@@ -17,7 +17,7 @@ header {
   color: white;
   text-align: center;
   padding: 10px;
-  position: relative;         /* Para evitar conflictos */
+  position: relative;         
 
 }
 
@@ -79,10 +79,10 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: relative; /* Asegura que no se superponga con el contenido */
+  position: relative; 
   bottom: 0;
   width: 100%;
-  z-index: 10; /* Asegura que el footer esté por encima de otros elementos si es necesario */
+  z-index: 10; 
 }
 
 .header-content {
@@ -145,7 +145,7 @@ h1 {
 .medico img {
   width: 50%;                 /* La imagen ocupa todo el ancho de la tarjeta */
   height: 100px;               /* Fija la altura de las imágenes */
-  object-fit: cover;           /* Ajusta la imagen sin distorsionar, recortando si es necesario */
+  object-fit: cover;           
   border-radius: 10px;         /* Bordes redondeados */
 }
 
@@ -395,8 +395,8 @@ input[type="radio"] {
 
 .cart-container {
   position: fixed;
-  top: 50px; /* Ajusta según la distancia que quieras desde el borde superior */
-  right: 150px; /* Ajusta según la distancia que quieras desde el borde derecho */
+  top: 50px; 
+  right: 150px; 
   z-index: 1000;
   background-color: white;
   border-radius: 50%;
@@ -413,7 +413,7 @@ input[type="radio"] {
 .cart-icon {
   font-size: 24px; /* Tamaño del ícono de Font Awesome */
   color: #333;     /* Color del ícono */
-  line-height: 1;  /* Asegura que no haya espacio adicional dentro del ícono */
+  line-height: 1;  
 }
 
 .cart-count {
@@ -426,18 +426,3 @@ input[type="radio"] {
   padding: 5px 8px;
   font-size: 14px;
 }
-
-.grupo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    display: flex;
-}
-
-.grupo img {
-  width: 50%; 
-  height: auto; 
-  transform: rotate(-90deg);
-}
-
