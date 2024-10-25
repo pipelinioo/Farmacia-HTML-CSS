@@ -20,49 +20,65 @@ header {
   padding: 10px;
 }
 
-/* Menú lateral */
 nav.menu {
-  position: fixed;    /* Para fijar el menú al lado izquierdo */
-  left: 0;            /* Alinearlo al borde izquierdo */
-  top: 0;             /* Inicia desde el borde superior */
-  width: 200px;       /* Ancho del menú */
-  height: 100%;       /* Altura completa de la pantalla */
-  background-color: #C4DFDF; /* Color de fondo */
-  padding-top: 20px;  /* Espacio superior */
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+  background-color: #C4DFDF;
+  display: flex;
+  justify-content: center; 
+  padding:10px 0;
+  position: relative; 
+  z-index: 10;
 }
 
 nav.menu ul {
-  list-style: none;   /* Elimina los puntos de la lista */
+  list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 nav.menu ul li {
-  margin-bottom: 10px; /* Espacio entre los elementos */
+  padding: 10px 20px;
+  border-bottom: 1px solid #fff;
+  position: relative;
 }
 
 nav.menu ul li a {
-  text-decoration: none;  /* Elimina el subrayado */
-  padding: 10px 20px;     /* Espaciado dentro de los enlaces */
-  display: block;         /* Los enlaces ocupan todo el ancho del contenedor */
-  color: #f9f9f9;            /* Color del texto */
-  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
-nav.menu ul li a:hover {
-  background-color: #ddd; /* Color de fondo al pasar el mouse */
-  color: #000;            /* Color de texto al pasar el mouse */
+nav.menu ul li:hover > a {
+  background-color: #ddd;
+  color: #333;
 }
 
-/* Submenú */
 nav.menu ul li ul.submenu {
-  padding-left: 20px;    /* Indentación del submenú */
-  display: none;         /* Oculta el submenú por defecto */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #C4DFDF;
+  padding: 0;
+  list-style-type: none;
+  z-index: 20;
+}
+
+nav.menu ul li ul.submenu li {
+  padding: 10px 20px;
+}
+
+nav.menu ul li ul.submenu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav.menu ul li ul.submenu li a:hover {
+  background-color: #ddd;
+  color: #333;
 }
 
 nav.menu ul li:hover ul.submenu {
-  display: block;        /* Muestra el submenú al pasar el mouse sobre el padre */
+  display: block;
 }
 
 main {
@@ -83,21 +99,18 @@ footer {
   width: 100%;
 }
 
-.header-content {
-  display: flex;
-  flex-direction: column; /* Apila el logo y título verticalmente */
-  align-items: center;    /* Centrar horizontalmente */
-  flex: 1;                /* Ocupa el espacio disponible */
-  text-align: center;
-}
-./* Ajuste del logo */
 .logo img {
-  width: 150px;  /* Tamaño del logo */
+  width: 100px;
   height: auto;
-  margin-bottom: 10px; /* Espacio debajo del logo */
+  margin-right: 10px;
 }
 
-/* Alinear el login a la derecha */
+h1 {
+  font-size: 24px;
+  margin: 0;
+  margin-left: 10px;
+}
+
 .login {
   margin-right: 20px;
 }
@@ -381,13 +394,6 @@ body {
   text-decoration: underline;
 }
 
-.MR {
-  display: flex;
-  justify-content: center;  /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
-  height: 100%;             /* El contenedor ocupa toda la pantalla */
-}
-
 /* Estilo para el footer */
 .footer {
   background-color: #C4DFDF;
@@ -395,5 +401,92 @@ body {
   padding: 10px 0;
   position: relative; /* Asegura que no se superponga con el contenido */
   bottom: 0;
+  width: 100%;
 }
+
+/* Estilos generales para la página de login */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
 
