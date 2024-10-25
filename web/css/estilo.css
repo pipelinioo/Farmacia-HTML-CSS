@@ -26,8 +26,7 @@ aside {
 	border: 1px solid red;
 	width: 19%;
 	border: 1px solid red;
-	/*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
-	/*visibility: hidden;*/
+
 }
 footer {
 	position: relative;
@@ -69,7 +68,7 @@ ul.menu li a{
 /* Estilos para el menú horizontal */
 nav.menu {
   background-color: #C4DFDF;
-  display: flex;         /* Cambia a flexbox para un menú horizontal */
+  display: flex;         
   justify-content: center;
   padding: 10px 0;
 }
@@ -78,11 +77,11 @@ nav.menu ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;         /* Hace que los elementos sean horizontales */
+  display: flex;        
 }
 
 nav.menu ul li {
-  position: relative;    /* Necesario para los submenús */
+  position: relative;   
   padding: 10px 20px;
 }
 
@@ -92,15 +91,15 @@ nav.menu ul li a {
 }
 
 nav.menu ul li:hover > a {
-  background-color: #ddd; /* Cambia el color cuando pases el mouse */
+  background-color: #ddd; 
   color: #333;
 }
 
 /* Estilos para los submenús (ocultos inicialmente) */
 nav.menu ul li ul.submenu {
-  display: none;               /* Ocultar submenús por defecto */
-  position: absolute;          /* Posicionarlo bajo el menú principal */
-  top: 100%;                   /* Justo debajo del elemento principal */
+  display: none;              
+  position: absolute;         
+  top: 100%;                  
   left: 0;
   background-color: #C4DFDF;
   padding: 0;
@@ -112,7 +111,7 @@ nav.menu ul li ul.submenu li {
 }
 
 nav.menu ul li ul.submenu li a {
-  color: #333;                 /* Color del texto del submenú */
+  color: #333;                 
   text-decoration: none;
 }
 
@@ -126,7 +125,7 @@ nav.menu ul li:hover ul.submenu {
   display: block;
 }
 
-/* Para el main asegurarse que tiene el margen adecuado */
+
 main {
   margin: 20px;
   padding: 20px;
