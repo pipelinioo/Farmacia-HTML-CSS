@@ -2,7 +2,7 @@
 
 <head>
 <link rel="stylesheet" type="text/css" media="all" href="css/farmacia.css?v=1.2">
-<title> Ofertas - Rayos X </title>
+<title> Farmacia Recetas Rayos X </title>
 </head>
 
 <header>
@@ -40,6 +40,7 @@
     
     </li>
     <li><a href="listadofarmacias.html">Farmacias</a></li>
+    <li><a href="Carrito.html">Carrito</a></li>
     <li><a href="MR.html">Estructura(MR)</a></li> 
     <li><a href="Grupo.html">Grupo Trabajo</a></li>
   </ul>
@@ -89,7 +90,7 @@
         <input type="radio" name="servicio" value="Pediatr&iacute;a" required> Pediatr&iacute;a - Dr. Jose Martinez
       </label>
       <label>
-        <input type="radio" name="servicio" value="Cardiolog&iacute;a"> Cardiolog&iacute;a - Dra. Cristina Mu&#209;oz
+        <input type="radio" name="servicio" value="Cardiolog&iacute;a"> Cardiolog&iacute;a - Dra. Cristina Mu&#241;oz
       </label>
       <label>
         <input type="radio" name="servicio" value="Neurolog&iacute;a"> Neurolog&iacute;a - Dra. Luisa Cardenas

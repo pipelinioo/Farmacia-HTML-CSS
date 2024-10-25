@@ -2,21 +2,22 @@
 
 <head>
 <link rel="stylesheet" type="text/css" media="all" href="css/farmacia.css?v=1.2">
-<title> Sistema respiratorio y alergias </title>
+<title> Farmacia Recetas Rayos X </title>
 </head>
 
 <header>
-  <div class="logo">
-    <img src="media/cheto.png" alt="Logo de la Farmacia" width="100">
+  <div class="header-content">
+    <div class="logo">
+    <img src="media/cheto.png" alt="Logo de la Farmacia"width="70">
+    </div>
+    <h1>Recetas Rayos X</h1>
   </div>
-  <h1>Recetas Rayos X</h1>
-  
+
   <div class="login">
     <a href="login.html">Iniciar Sesi&oacute;n</a>
   </div>
-  
-  
 </header>
+
 
 <nav class="menu">
   <ul>
@@ -40,6 +41,7 @@
     
     </li>
     <li><a href="listadofarmacias.html">Farmacias</a></li>
+    <li><a href="Carrito.html">Carrito</a></li>
     <li><a href="MR.html">Estructura(MR)</a></li> 
     <li><a href="Grupo.html">Grupo Trabajo</a></li>
   </ul>

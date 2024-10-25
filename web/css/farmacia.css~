@@ -6,8 +6,7 @@ body {
   color: #333;
   display: flex;              /* Flex para estructurar */
   flex-direction: column;     /* Columnas verticales */
-  min-height: 100vh;
-  
+  min-height: 100vh;          /* Asegura que el cuerpo ocupe al menos el 100% de la ventana */
 }
 
 header {
@@ -72,7 +71,7 @@ main {
   padding: 20px;
   position: relative; /* Asegura que el contenido principal no interfiera con el menú */
   z-index: 1;
-  flex:1;
+  flex-grow: 1; /* Expande el contenido principal para llenar el espacio disponible */
 }
 
 footer {
@@ -80,9 +79,10 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: sticky;
+  position: relative; /* Asegura que no se superponga con el contenido */
   bottom: 0;
   width: 100%;
+  z-index: 10; /* Asegura que el footer esté por encima de otros elementos si es necesario */
 }
 
 .header-content {
@@ -119,6 +119,7 @@ h1 {
 .login a:hover {
   color: #ddd;
 }
+
 /* Contenedor para todo el equipo médico */
 .equipo-medico {
   display: flex;
@@ -160,6 +161,7 @@ h1 {
   color: #555;
   font-size: 14px;             /* Tamaño del texto de especialidad */
 }
+
 .productos {
   display: flex;
   justify-content: center;
@@ -253,6 +255,7 @@ h1 {
 .boton-agregar:hover {
   background-color: #45a049;
 }
+
 /* Estilo para pedir horita */
 body {
   font-family: Arial, sans-serif;
@@ -322,27 +325,17 @@ input[type="radio"] {
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 5px;
   font-size: 16px;
+  border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .submit-btn:hover {
   background-color: #218838;
 }
-/* Estilo para la info de farmacias */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh; /* Hace que el body ocupe al menos el 100% de la pantalla */
-  display: flex;
-  flex-direction: column;
-}
 
 .farmacias-container {
-  flex-grow: 1; /* Esto asegura que el contenido crezca y no se solape con el footer */
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
@@ -357,26 +350,19 @@ body {
 }
 
 .farmacia-card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 100%;
-  max-width: 200px;
-  margin-bottom: 20px;
-}
-
-.farmacia-card h3 {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .farmacia-card img {
   width: 100px;
-  height: 100px;
-  margin-bottom: 15px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .farmacia-card a {
@@ -390,10 +376,11 @@ body {
 }
 
 .MR {
-  display: flex;
-  justify-content: center;  /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
-  height: 100%;             /* El contenedor ocupa toda la pantalla */
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 100%;             /* El contenedor ocupa toda la pantalla */
+    display: flex;
 }
 
 /* Estilo para el footer */
@@ -403,5 +390,5 @@ body {
   padding: 10px 0;
   position: relative; /* Asegura que no se superponga con el contenido */
   bottom: 0;
+>>>>>>> upstream/main
 }
-
