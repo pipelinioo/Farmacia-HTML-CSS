@@ -396,7 +396,7 @@ input[type="radio"] {
 
 .cart-container {
   position: fixed;
-  top: 20px; /* Ajusta según la distancia que quieras desde el borde superior */
+  top: 50px; /* Ajusta según la distancia que quieras desde el borde superior */
   right: 150px; /* Ajusta según la distancia que quieras desde el borde derecho */
   z-index: 1000;
   background-color: white;
