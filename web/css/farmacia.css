@@ -427,3 +427,18 @@ input[type="radio"] {
   padding: 5px 8px;
   font-size: 14px;
 }
+
+.grupo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.grupo img {
+  width: 50%; 
+  height: auto; 
+  transform: rotate(-90deg);
+}
+
