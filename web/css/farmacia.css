@@ -18,6 +18,7 @@ header {
   color: white;
   text-align: center;
   padding: 10px;
+    position: relative; 
 }
 
 /* Menú lateral */
@@ -83,18 +84,21 @@ footer {
   width: 100%;
 }
 
+.header-content {
+  display: flex;
+  flex-direction: column; /* Apila el logo y título verticalmente */
+  align-items: center;    /* Centrar horizontalmente */
+  flex: 1;                /* Ocupa el espacio disponible */
+  text-align: center;
+}
+./* Ajuste del logo */
 .logo img {
-  width: 100px;
+  width: 150px;  /* Tamaño del logo */
   height: auto;
-  margin-right: 10px;
+  margin-bottom: 10px; /* Espacio debajo del logo */
 }
 
-h1 {
-  font-size: 24px;
-  margin: 0;
-  margin-left: 10px;
-}
-
+/* Alinear el login a la derecha */
 .login {
   margin-right: 20px;
 }
