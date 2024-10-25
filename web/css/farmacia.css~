@@ -392,38 +392,3 @@ input[type="radio"] {
   bottom: 0;
 >>>>>>> upstream/main
 }
-
-
-.cart-container {
-  position: fixed;
-  top: 20px; /* Ajusta según la distancia que quieras desde el borde superior */
-  right: 150px; /* Ajusta según la distancia que quieras desde el borde derecho */
-  z-index: 1000;
-  background-color: white;
-  border-radius: 50%;
-  width: 50px;  /* Tamaño del círculo */
-  height: 50px; /* Tamaño del círculo */
-  display: flex; /* Flexbox para centrar el contenido */
-  justify-content: center; /* Centrado horizontal */
-  align-items: center;     /* Centrado vertical */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc;  /* Opcional: Borde para ver mejor el círculo */
-}
-
-
-.cart-icon {
-  font-size: 24px; /* Tamaño del ícono de Font Awesome */
-  color: #333;     /* Color del ícono */
-  line-height: 1;  /* Asegura que no haya espacio adicional dentro del ícono */
-}
-
-.cart-count {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background-color: #538392;
-  color: white;
-  border-radius: 50%;
-  padding: 5px 8px;
-  font-size: 14px;
-}
